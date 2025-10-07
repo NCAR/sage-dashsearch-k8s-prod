@@ -1,0 +1,16 @@
+webapp:
+  name: ckanprod
+  group: ckanprod
+  path: "/"
+  tls:
+    fqdn: ckanprod.data-commons.k8s.ucar.edu
+    secretName: incommon-cert-sage-ckanprod
+  container:
+    image: nginx
+    port: 443
+  images:
+    solr: ghcr.io/ncar/sage-dashsearch-solr
+    postgres: ghcr.io/ncar/sage-dashsearch-postgres
+    nginx: ghcr.io/ncar/sage-dashsearch-nginx
+    ckan: ghcr.io/ncar/sage-dashsearch-ckan
+  tag: 2025-10-02.19.57

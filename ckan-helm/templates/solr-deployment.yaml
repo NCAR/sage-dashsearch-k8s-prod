@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose --file docker-compose.yml convert -c
+    kompose.version: 1.36.0 (ae2a39403)
+  labels:
+    io.kompose.service: solr
+  name: solr
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: solr
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose --file docker-compose.yml convert -c
+        kompose.version: 1.36.0 (ae2a39403)
+      labels:
+        io.kompose.service: solr
+    spec:
+      securityContext:
+        runAsUser: 8983
+        runAsGroup: 8983
+        fsGroup: 8983
+      containers:
+        - image: "{{ .Values.webapp.images.solr }}:{{ .Values.webapp.tag }}"
+          livenessProbe:
+            exec:
+              command:
+                - wget
+                - -qO
+                - /dev/null
+                - http://localhost:8983/solr/
+          name: solr
+          ports:
+            - containerPort: 8983
+              protocol: TCP
+          volumeMounts:
+            - name: solr-data
+              mountPath: /var/solr
+      restartPolicy: Always
+      volumes:
+        - name: solr-data
+          persistentVolumeClaim:
+            claimName: solr-data

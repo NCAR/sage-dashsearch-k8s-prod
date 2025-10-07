@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose --file docker-compose.yml convert -c
+    kompose.version: 1.36.0 (ae2a39403)
+  labels:
+    io.kompose.service: nginx
+  name: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: nginx
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose --file docker-compose.yml convert -c
+        kompose.version: 1.36.0 (ae2a39403)
+      labels:
+        io.kompose.service: nginx
+    spec:
+      containers:
+        - image: "{{ .Values.webapp.images.nginx }}:{{ .Values.webapp.tag }}"
+          name: nginx
+          ports:
+            - containerPort: 443
+              protocol: TCP
+          volumeMounts:
+            - mountPath: /var/www
+              readOnly: true
+              name: waf-dir
+
+
+      restartPolicy: Always
+      volumes:
+        - name: waf-dir
+          persistentVolumeClaim:
+            claimName: waf-dir

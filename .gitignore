@@ -1,0 +1,13 @@
+# generic
+.DS_Store
+.vagrant
+.idea
+
+# code & config
+_service-provider/*
+_solr/schema.xml
+_src/*
+local/*
+.env
+.github_token
+.packages_token
