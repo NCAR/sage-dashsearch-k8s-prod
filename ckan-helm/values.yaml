@@ -9,8 +9,8 @@ webapp:
     image: nginx
     port: 443
   images:
-    solr: ghcr.io/ncar/sage-dashsearch-solr
-    postgres: ghcr.io/ncar/sage-dashsearch-postgres
-    nginx: ghcr.io/ncar/sage-dashsearch-nginx
-    ckan: ghcr.io/ncar/sage-dashsearch-ckan
-  tag: 2025-10-14.18.57
+    solr: ghcr.io/ncar/sageprod-dashsearch-solr
+    postgres: ghcr.io/ncar/sageprod-dashsearch-postgres
+    nginx: ghcr.io/ncar/sageprod-dashsearch-nginx
+    ckan: ghcr.io/ncar/sageprod-dashsearch-ckan
+  tag: 2025-10-14.22.33
