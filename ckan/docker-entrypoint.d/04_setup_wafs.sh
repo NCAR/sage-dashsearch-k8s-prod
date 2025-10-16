@@ -1,5 +1,5 @@
 
-# Add WAF for spatial harvesting
+# Add WAFs for spatial harvesting
 
 if [[ $CKAN__PLUGINS == *"spatial"* ]]; then
 
@@ -32,7 +32,7 @@ if [[ $CKAN__PLUGINS == *"spatial"* ]]; then
       fi
 
       # Make sure harvest source exists
-      ckan -c ~/ckan.ini harvester source create "${waf_folder}" "http://nginx:9000/${waf_folder}" "waf" "${waf_folder}" "TRUE" "ncar" "MANUAL" '{"user" : "admin", "read_only": true}'
+      ckan -c ~/ckan.ini harvester source create "${waf_folder}" "http://nginx:9000/${waf_folder}" "waf" "${waf_folder}" "TRUE" "${org}" "MANUAL" '{"user" : "admin", "read_only": true}'
   done
 
   # Return to home directory for supervisord startup
