@@ -4,6 +4,7 @@ webapp:
   path: "/"
   tls:
     fqdn: ckanprod.data-commons.k8s.ucar.edu
+    DNSAlias: data.ucar.edu
     secretName: incommon-cert-sage-ckanprod
   container:
     image: nginx
