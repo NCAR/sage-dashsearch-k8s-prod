@@ -10,7 +10,7 @@ metadata:
     nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
     #nginx.ingress.kubernetes.io/proxy-ssl-verify: "off"
 spec:
-  ingressClassName: nginx-internal
+  ingressClassName: nginx-external
   tls:
     - hosts:
       - {{ .Values.webapp.tls.fqdn }}
