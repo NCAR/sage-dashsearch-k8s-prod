@@ -3,18 +3,22 @@
 ##################################
 # /srv/app/run_harvester.sh
 ##################################
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/srv/app/.local/bin
 
 set -x
 
 WAF_FOLDER='/var/www/html/'
-
-ABORT_FAILED_JOBS='/usr/local/bin/ckan -c /srv/app/ckan.ini harvester abort-failed-jobs'
 MARK_JOBS_FINISHED='/usr/local/bin/ckan -c /srv/app/ckan.ini harvester run'
+ABORT_FAILED_JOBS='/usr/local/bin/ckan -c /srv/app/ckan.ini harvester abort-failed-jobs'
 
+# Try marking any jobs as finished before looking for hung jobs.
+# NOTE: we can't do this for long-running jobs without causing strange behavior in the harvest queue.
+# This can only be done safely if the job is finished running and fetch_consumer.log output has stopped.
+#$MARK_JOBS_FINISHED
 
-# Try aborting any hung harvest jobs.  We need to resync with the DB after a DB server timeout.
-#$ABORT_FAILED_JOBS
-$MARK_JOBS_FINISHED
+# Try aborting any hung harvest jobs (based on the job's start time).
+# We need to resync with the DB after a DB server timeout, which we can't really control.
+$ABORT_FAILED_JOBS
 
 directories=$( ls -d $WAF_FOLDER*/ )
 
@@ -37,3 +41,16 @@ for directory in $directories; do
 
     fi
 done
+
+# Wait for fetch_consumer.log to stop growing
+logsize=`wc /var/log/ckan/std/fetch_consumer.log | awk '{print $1;}'`
+logsize_old=-1
+while [ "$logsize" '!=' "$logsize_old" ]; do
+    sleep 30
+    logsize_old=$logsize
+    logsize=`wc /var/log/ckan/std/fetch_consumer.log | awk '{print $1;}'`
+    echo "logsize == $logsize; logsize_old == $logsize_old"
+done
+
+# Mark running jobs as finished
+$MARK_JOBS_FINISHED
