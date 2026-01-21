@@ -53,26 +53,31 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && mkdir -p /var/log/ckan/std /var/log/supervisor /etc/supervisor/conf.d \
     && chown -R ckan:ckan-sys /var/log/ckan /var/log/supervisor /etc/supervisor/conf.d
 
-# Config cron job for harvesting
-COPY config/supervisord.conf /etc/supervisord.d/ckan.conf
+# Config cron job for harvesting (with supervisorctl working)
+#COPY config/supervisord_ckan.conf /etc/supervisor/conf.d/ckan.conf
+#COPY config/supervisord.conf /etc/supervisor/supervisord.conf
+
+# Config cron job for harvesting (for now)
+COPY config/supervisord.conf /etc/supervisor/conf.d/ckan.conf
 COPY config/crontab /etc/cron.d/ckan-cron
 
 # Running cron as non-root user and give permission to ckan user
-RUN chmod gu+rw /var/run && \
-    chmod gu+s /usr/sbin/cron && \
+RUN chmod gu+s /usr/sbin/cron && \
     crontab -u ckan /etc/cron.d/ckan-cron
 
 # Copy custom initialization scripts
 COPY --chown=ckan-sys:ckan-sys docker-entrypoint.d/* /docker-entrypoint.d/
 COPY --chown=ckan-sys:ckan-sys setup/prerun.py ${APP_DIR}
 
-# Apply any patches needed to CKAN core or any of the built extensions (not the
-# runtime mounted ones)
+# Copy Pure XML for serving at endpoint <ckan_base_url>/pure.xml
+#COPY --chown=ckan-sys:ckan-sys setup/pure.xml ${APP_DIR}
+
+# Apply any patches needed to CKAN core or any of the built extensions (not the runtime mounted ones)
 COPY --chown=ckan-sys:ckan-sys patches ${APP_DIR}/patches
 
 
 # Add supervisord invocation during startup
-RUN sed -i '/uwsgi \$UWSGI_OPTS/i\    supervisord --configuration \/etc\/supervisord.d\/ckan.conf &' ${APP_DIR}/start_ckan.sh
+RUN sed -i '/uwsgi \$UWSGI_OPTS/i\    supervisord --configuration \/etc\/supervisor\/supervisord.conf &' ${APP_DIR}/start_ckan.sh
 
 USER ckan
 RUN for d in $APP_DIR/patches/*; do \
