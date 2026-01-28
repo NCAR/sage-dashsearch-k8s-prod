@@ -53,11 +53,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && mkdir -p /var/log/ckan/std /var/log/supervisor /etc/supervisor/conf.d \
     && chown -R ckan:ckan-sys /var/log/ckan /var/log/supervisor /etc/supervisor/conf.d
 
-# Config cron job for harvesting (with supervisorctl working)
+# Config supervisor for managing cron and harvest processes
 COPY config/supervisord_ckan.conf /etc/supervisor/conf.d/ckan.conf
 COPY config/supervisord.conf /etc/supervisor/supervisord.conf
 
-# Config cron job for harvesting (for now)
+# Config cron job for harvesting
 COPY config/crontab /etc/cron.d/ckan-cron
 
 # Running cron as non-root user and give permission to ckan user
@@ -69,7 +69,7 @@ COPY --chown=ckan-sys:ckan-sys docker-entrypoint.d/* /docker-entrypoint.d/
 COPY --chown=ckan-sys:ckan-sys setup/prerun.py ${APP_DIR}
 
 # Copy Pure XML for serving at endpoint <ckan_base_url>/pure.xml
-#COPY --chown=ckan-sys:ckan-sys setup/pure.xml ${APP_DIR}
+COPY --chown=ckan-sys:ckan-sys setup/pure.xml ${APP_DIR}
 
 # Apply any patches needed to CKAN core or any of the built extensions (not the runtime mounted ones)
 COPY --chown=ckan-sys:ckan-sys patches ${APP_DIR}/patches
