@@ -1,4 +1,4 @@
-FROM ckan/ckan-base:2.11.3
+FROM ckan/ckan-base:2.11.4
 
 # Workaround from https://github.com/ckan/ckan-docker/issues/196
 USER root
