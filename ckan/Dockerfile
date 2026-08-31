@@ -12,7 +12,6 @@ RUN chown -R ckan:ckan-sys ${APP_DIR} && chmod 755 /srv/app/*.sh
 
 USER ckan
 
-
 # Install any extensions needed by your CKAN instance
 # See Dockerfile.dev for more details and examples
 
