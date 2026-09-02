@@ -1,13 +1,26 @@
 #!/bin/bash
 
-if [[ $CKAN__PLUGINS == *"dsetsearch"* ]]; then
+ckan config-tool --edit ./ckan.ini ckan.plugins='activity dsetsearch harvest waf_harvester spatial_harvest_metadata_api spatial_metadata spatial_query repo_info extentsearch datesearch sitemap'
 
-  # Show commands that are run
-  set -x
+CKAN_PLUGINS=`grep plugins ${APP_DIR}/ckan.ini`
+
+if [[ $CKAN_PLUGINS == *"dsetsearch"* ]]; then
+
+  # Load private repo clone token (not used for kubernetes deployment)
+  if [[ -f '/run/secrets/REPO_TOKEN' ]]; then
+     REPO_TOKEN=`cat /run/secrets/REPO_TOKEN`
+  fi
 
   ### Install DASH Search custom plugin at runtime, to avoid baking in secrets
-  pip3 install -e "git+https://${REPO_TOKEN}@github.com/NCAR/ckanext-dsetsearch.git@main#egg=ckanext-dsetsearch" && \
-  pip3 install -r ${APP_DIR}/src/ckanext-dsetsearch/pip-requirements.txt
+  if [ ! -d "${SRC_EXTENSIONS_DIR}/ckanext-dsetsearch" ]; then
+      cd ${SRC_EXTENSIONS_DIR}
+      git clone https://${REPO_TOKEN}@github.com/NCAR/ckanext-dsetsearch.git
+      cd ckanext-dsetsearch
+      git fetch
+      cd
+  fi
+  pip3 install -e ${SRC_EXTENSIONS_DIR}/ckanext-dsetsearch && \
+  pip3 install -r ${SRC_EXTENSIONS_DIR}/ckanext-dsetsearch/pip-requirements.txt
 
   ckan config-tool --edit ./ckan.ini ckan.auth.public_user_details=false
   ckan config-tool --edit ./ckan.ini ckan.cors.origin_allow_all=true
