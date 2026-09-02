@@ -8,6 +8,8 @@ _service-provider/*
 _solr/schema.xml
 _src/*
 local/*
+src/
+src_docker/
 .env
 .github_token
 .packages_token
