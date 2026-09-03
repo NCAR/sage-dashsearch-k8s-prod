@@ -16,4 +16,4 @@ webapp:
     postgres: ghcr.io/ncar/sageprod-dashsearch-postgres
     nginx: ghcr.io/ncar/sageprod-dashsearch-nginx
     ckan: ghcr.io/ncar/sageprod-dashsearch-ckan
-  tag: 2026-09-02.20.35
+  tag: 2026-09-03.18.30
