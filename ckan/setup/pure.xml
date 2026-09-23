@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <datasets xmlns="v1.dataset.pure.atira.dk" xmlns:v3="v3.commons.pure.atira.dk">
-  <dataset id="edu.ucar.gdex::d336000" type="dataset">
-    <title>Historical Unidata Internet Data Distribution (IDD) Global Observational Data</title>
-    <description> This dataset contains the historical Unidata Internet Data Distribution (IDD) Global Observational Data that are derived from real-time Global Telecommunications System (GTS) reports distributed via the Unidata Internet Data Distribution System (IDD). Reports include surface station (SYNOP) reports at 3-hour intervals, upper air (RAOB) reports at 3-hour intervals, surface station (METAR) reports at 1-hour intervals, and marine surface (BUOY) reports at 1-hour intervals. Select variables found in all report types include pressure, temperature, wind speed, and wind direction. Data may be available at mandatory or significant levels from 1000 millibars to 1 millibar, and at surface levels. Online archives are populated daily with reports generated two days prior to the current date.</description>
-    <DOI>10.5065/9235-WJ24</DOI>
+  <dataset id="edu.ucar.gdex::d313006" type="dataset">
+    <title>Whole Atmosphere Community Climate Model (WACCM) Model Output</title>
+    <description>The Whole Atmosphere Community Climate Model (WACCM) is a comprehensive numerical model, spanning the range of altitude from the Earth's surface to about 500 km to 700 km altitude. These model output files are used by the atmospheric chemistry community to create regional forecasts. This dataset contains the 6-hourly forecasts in the daily files.</description>
+    <DOI>10.5065/G643-Z138</DOI>
     <availableDate>
-      <v3:year>2003</v3:year>
-      <v3:month>10</v3:month>
-      <v3:day>31</v3:day>
+      <v3:year>2020</v3:year>
+      <v3:month>04</v3:month>
+      <v3:day>01</v3:day>
     </availableDate>
     <persons>
       <person id="personAssoc1" contactPerson="false">
-        <person lookupId="28103495"/>
+        <person lookupId="28103088"/>
         <role>creator</role>
       </person>
     </persons>
@@ -54,22 +54,19 @@ In the earlier years, there is one grid per day, but from July 1962 on, there ar
       </person>
       <person id="personAssoc5" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>Department of Earth</lastName>
+          <lastName>Department of Earth, Atmospheric &amp; Planetary Sciences, Massachusetts Institute of Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
       <person id="personAssoc6" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
       <person id="personAssoc7" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>National Weather Service</lastName>
+          <lastName>National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -77,18 +74,57 @@ In the earlier years, there is one grid per day, but from July 1962 on, there ar
     <managingOrganisation lookupId="b8854078213e01359df4bf635605ca99"/>
     <publisher lookupId="ucarncar-publisher-ncar"/>
   </dataset>
-  <dataset id="edu.ucar.gdex::d313006" type="dataset">
-    <title>Whole Atmosphere Community Climate Model (WACCM) Model Output</title>
-    <description>The Whole Atmosphere Community Climate Model (WACCM) is a comprehensive numerical model, spanning the range of altitude from the Earth's surface to about 500 km to 700 km altitude. These model output files are used by the atmospheric chemistry community to create regional forecasts. This dataset contains the 6-hourly forecasts in the daily files.</description>
-    <DOI>10.5065/G643-Z138</DOI>
+  <dataset id="edu.ucar.gdex::d336000" type="dataset">
+    <title>Historical Unidata Internet Data Distribution (IDD) Global Observational Data</title>
+    <description> This dataset contains the historical Unidata Internet Data Distribution (IDD) Global Observational Data that are derived from real-time Global Telecommunications System (GTS) reports distributed via the Unidata Internet Data Distribution System (IDD). Reports include surface station (SYNOP) reports at 3-hour intervals, upper air (RAOB) reports at 3-hour intervals, surface station (METAR) reports at 1-hour intervals, and marine surface (BUOY) reports at 1-hour intervals. Select variables found in all report types include pressure, temperature, wind speed, and wind direction. Data may be available at mandatory or significant levels from 1000 millibars to 1 millibar, and at surface levels. Online archives are populated daily with reports generated two days prior to the current date.</description>
+    <DOI>10.5065/9235-WJ24</DOI>
     <availableDate>
-      <v3:year>2020</v3:year>
-      <v3:month>04</v3:month>
-      <v3:day>01</v3:day>
+      <v3:year>2003</v3:year>
+      <v3:month>10</v3:month>
+      <v3:day>31</v3:day>
     </availableDate>
     <persons>
       <person id="personAssoc1" contactPerson="false">
-        <person lookupId="28103088"/>
+        <person lookupId="28103495"/>
+        <role>creator</role>
+      </person>
+    </persons>
+    <managingOrganisation lookupId="b8854078213e01359df4bf635605ca99"/>
+    <publisher lookupId="ucarncar-publisher-ncar"/>
+  </dataset>
+  <dataset id="edu.ucar.gdex::d313000" type="dataset">
+    <title>GEOS5 Global Atmosphere Forcing Data</title>
+    <description>NASA's GEOS-5 is used to produce detailed atmospheric data, such as meteorological conditions (temperature, wind, humidity) and the concentrations of various chemical species like carbon monoxide (CO). ACOM uses GEOS-5 as a source of the atmospheric forcing data, regridded and prepared as meteorological variables to run CESM and WRF simulations.</description>
+    <DOI>10.5065/QTSA-G775</DOI>
+    <availableDate>
+      <v3:year>2016</v3:year>
+      <v3:month>11</v3:month>
+      <v3:day>14</v3:day>
+    </availableDate>
+    <persons>
+      <person id="personAssoc1" contactPerson="false">
+        <person lookupId="010165"/>
+        <role>creator</role>
+      </person>
+    </persons>
+    <managingOrganisation lookupId="b8854078213e01359df4bf635605ca99"/>
+    <publisher lookupId="ucarncar-publisher-ncar"/>
+  </dataset>
+  <dataset id="edu.ucar.gdex::d651092" type="dataset">
+    <title>iCESM-HR Resolution Hierarchy for Preindustrial, Eocene, and 4xCO2 Climates</title>
+    <description>This dataset comprises a suite of resolution-hierarchy simulations developed with the water isotope-enabled Community Earth System Model at high resolution (iCESM-HR). The simulations are designed to investigate the responses of climate states and weather extremes to external forcings in past and future warm climates, as well as the dependence of these responses on model resolution. A resolution-hierarchy framework is particularly valuable for disentangling the roles of individual high-resolution model components and for providing process-level and mechanistic insight.
+
+The hierarchy includes three coupled model configurations: high resolution (HR), with approximately 0.25 degrees resolution in the atmosphere and land components and approximately 0.1 degrees resolution in the ocean and sea-ice components; low resolution (LR), with approximately 1 degrees resolution in all components; and mixed resolution (HaLo), with high-resolution atmosphere and land components coupled to low-resolution ocean and sea-ice components. The HR, LR, and HaLo configurations include simulations of the preindustrial climate and the early Eocene warm climate, approximately 50 million years ago. Quasi-equilibrated 4xCO2 simulations are available for the HR and LR configurations only. The early Eocene was characterized by sustained global warmth, atmospheric CO2 concentrations of approximately 1400ppmv, and global warming of approximately 14C. The simulations were performed and documented by Zhu et al. (2026; DOI: 10.21203/rs.3.rs-9097760/v1).
+
+These simulations complement the ASD PaleoWeather collection and the MESACLIP historical and future simulation datasets. Together, these datasets support research on weather-climate interactions in warm-climate states, including investigations of heat waves, atmospheric rivers, and tropical cyclones. The resolution hierarchy provides a framework for attribution studies and for process-level, mechanistic investigation of links between climate change and weather extremes across Earth's past, present, and future climate states.</description>
+    <availableDate>
+      <v3:year>2026</v3:year>
+      <v3:month>09</v3:month>
+      <v3:day>22</v3:day>
+    </availableDate>
+    <persons>
+      <person id="personAssoc1" contactPerson="false">
+        <person lookupId="012893"/>
         <role>creator</role>
       </person>
     </persons>
@@ -123,24 +159,6 @@ In the earlier years, there is one grid per day, but from July 1962 on, there ar
       </person>
       <person id="personAssoc5" contactPerson="false">
         <person lookupId="017767"/>
-        <role>creator</role>
-      </person>
-    </persons>
-    <managingOrganisation lookupId="b8854078213e01359df4bf635605ca99"/>
-    <publisher lookupId="ucarncar-publisher-ncar"/>
-  </dataset>
-  <dataset id="edu.ucar.gdex::d313000" type="dataset">
-    <title>GEOS5 Global Atmosphere Forcing Data</title>
-    <description>NASA's GEOS-5 is used to produce detailed atmospheric data, such as meteorological conditions (temperature, wind, humidity) and the concentrations of various chemical species like carbon monoxide (CO). ACOM uses GEOS-5 as a source of the atmospheric forcing data, regridded and prepared as meteorological variables to run CESM and WRF simulations.</description>
-    <DOI>10.5065/QTSA-G775</DOI>
-    <availableDate>
-      <v3:year>2016</v3:year>
-      <v3:month>11</v3:month>
-      <v3:day>14</v3:day>
-    </availableDate>
-    <persons>
-      <person id="personAssoc1" contactPerson="false">
-        <person lookupId="010165"/>
         <role>creator</role>
       </person>
     </persons>
@@ -760,22 +778,19 @@ The grids for the period 1899-1977 were inspected and many corrections were made
       </person>
       <person id="personAssoc6" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>Department of Earth</lastName>
+          <lastName>Department of Earth, Atmospheric &amp; Planetary Sciences, Massachusetts Institute of Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
       <person id="personAssoc7" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
       <person id="personAssoc8" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>National Weather Service</lastName>
+          <lastName>National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -1495,8 +1510,7 @@ The latest Release 3.0 (R3.0) of ICOADS covers 1662-2014, and is coupled with im
       </person>
       <person id="personAssoc5" contactPerson="false">
         <person origin="external">
-          <firstName>Germany</firstName>
-          <lastName>Deutscher Wetterdienst (German Meteorological  Service)</lastName>
+          <lastName>Deutscher Wetterdienst (German Meteorological  Service), Germany</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -1520,8 +1534,7 @@ The latest Release 3.0 (R3.0) of ICOADS covers 1662-2014, and is coupled with im
       </person>
       <person id="personAssoc9" contactPerson="false">
         <person origin="external">
-          <firstName>NESDIS</firstName>
-          <lastName>National Centers for Environmental Information</lastName>
+          <lastName>National Centers for Environmental Information, NESDIS, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -1728,8 +1741,7 @@ TC-OBS currently includes data for all TCs that occurred in the North Atlantic b
       </person>
       <person id="personAssoc4" contactPerson="false">
         <person origin="external">
-          <firstName>NESDIS</firstName>
-          <lastName>National Centers for Environmental Information</lastName>
+          <lastName>National Centers for Environmental Information, NESDIS, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -4209,8 +4221,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>Prediction</lastName>
+          <lastName>NOAA National Centers for Environmental Prediction</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -5268,8 +5279,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>Prediction</lastName>
+          <lastName>NOAA National Centers for Environmental Prediction</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -5441,8 +5451,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>Service</lastName>
+          <lastName>Atmospheric Environment Service</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -5631,8 +5640,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Natural</firstName>
-          <lastName>Service</lastName>
+          <lastName>Natural Resources Conservation Service</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -5705,8 +5713,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Korea</firstName>
-          <lastName>Administration</lastName>
+          <lastName>Korea Meteorological Administration</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -5996,8 +6003,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>Prediction</lastName>
+          <lastName>NOAA National Centers for Environmental Prediction</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -6734,8 +6740,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>Prediction</lastName>
+          <lastName>NOAA National Centers for Environmental Prediction</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -6784,8 +6789,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -7365,7 +7369,8 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Andr&amp;amp</firstName>
+          <firstName>Andr&amp;amp;eacute;</firstName>
+          <lastName>S&amp;amp;aacute;</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -8647,8 +8652,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>Prediction</lastName>
+          <lastName>NOAA National Centers for Environmental Prediction</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -9024,8 +9028,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -9103,8 +9106,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -9128,8 +9130,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -9239,8 +9240,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>United</firstName>
-          <lastName>Guard</lastName>
+          <lastName>United States Coast Guard</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -9817,8 +9817,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>United</firstName>
-          <lastName>Guard</lastName>
+          <lastName>United States Coast Guard</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -9982,8 +9981,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -10539,8 +10537,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -10862,8 +10859,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>Service</lastName>
+          <lastName>Atmospheric Environment Service</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -11143,8 +11139,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -11401,7 +11396,8 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Andr&amp;amp</firstName>
+          <firstName>Andr&amp;amp;eacute;</firstName>
+          <lastName>S&amp;amp;aacute;</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -12010,8 +12006,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -12794,8 +12789,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Natural</firstName>
-          <lastName>Service</lastName>
+          <lastName>Natural Resources Conservation Service</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -12941,8 +12935,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>Prediction</lastName>
+          <lastName>NOAA National Centers for Environmental Prediction</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -12984,8 +12977,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -13045,8 +13037,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Korea</firstName>
-          <lastName>Administration</lastName>
+          <lastName>Korea Meteorological Administration</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -13372,8 +13363,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Natural</firstName>
-          <lastName>Service</lastName>
+          <lastName>Natural Resources Conservation Service</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -14549,8 +14539,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -15394,8 +15383,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -15666,8 +15654,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -15763,8 +15750,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>Prediction</lastName>
+          <lastName>NOAA National Centers for Environmental Prediction</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -15866,8 +15852,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>Prediction</lastName>
+          <lastName>NOAA National Centers for Environmental Prediction</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -17138,8 +17123,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>United</firstName>
-          <lastName>Guard</lastName>
+          <lastName>United States Coast Guard</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -18049,7 +18033,7 @@ Citation: The two papers linked below are the most appropriate references for th
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
           <firstName>Met</firstName>
-          <lastName>ireann</lastName>
+          <lastName>&amp;amp;Eacute;ireann</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -18727,8 +18711,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>Administration</lastName>
+          <lastName>National Oceanic and Atmospheric Administration</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -18862,8 +18845,7 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -19177,7 +19159,8 @@ Citation: The two papers linked below are the most appropriate references for th
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Andr&amp;amp</firstName>
+          <firstName>Andr&amp;amp;eacute;</firstName>
+          <lastName>S&amp;amp;aacute;</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -22756,7 +22739,7 @@ Data description: Post-processed fields from CESM2 initialized seasonal hindcast
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
           <firstName>Agencia</firstName>
-          <lastName>a</lastName>
+          <lastName>Meteorolog&amp;amp;iacute;a</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -24004,8 +23987,7 @@ Data description: Post-processed fields from CESM2 initialized seasonal hindcast
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>Service</lastName>
+          <lastName>Atmospheric Environment Service</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -24122,8 +24104,7 @@ Data description: Post-processed fields from CESM2 initialized seasonal hindcast
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -25104,7 +25085,7 @@ Data description: Post-processed fields from CESM2 initialized seasonal hindcast
       <person id="personAssoc5" contactPerson="false">
         <person origin="external">
           <firstName>Daniel</firstName>
-          <lastName>Sullivan</lastName>
+          <lastName>O&amp;amp;#39;Sullivan</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -25399,8 +25380,7 @@ Data description: Post-processed fields from CESM2 initialized seasonal hindcast
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -25581,8 +25561,7 @@ Data description: Post-processed fields from CESM2 initialized seasonal hindcast
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -25792,8 +25771,7 @@ Data description: Post-processed fields from CESM2 initialized seasonal hindcast
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>United</firstName>
-          <lastName>Guard</lastName>
+          <lastName>United States Coast Guard</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -26319,8 +26297,7 @@ Data description: Post-processed fields from CESM2 initialized seasonal hindcast
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Natural</firstName>
-          <lastName>Service</lastName>
+          <lastName>Natural Resources Conservation Service</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -26786,8 +26763,7 @@ Data description: Post-processed fields from CESM2 initialized seasonal hindcast
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -27230,8 +27206,7 @@ Data description: Post-processed fields from CESM2 initialized seasonal hindcast
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>Service</lastName>
+          <lastName>Atmospheric Environment Service</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -27255,8 +27230,7 @@ Data description: Post-processed fields from CESM2 initialized seasonal hindcast
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -27280,8 +27254,7 @@ Data description: Post-processed fields from CESM2 initialized seasonal hindcast
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -27879,8 +27852,7 @@ Data description: Post-processed fields from CESM2 initialized seasonal hindcast
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>Prediction</lastName>
+          <lastName>NOAA National Centers for Environmental Prediction</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -28166,8 +28138,7 @@ Data description: Post-processed fields from CESM2 initialized seasonal hindcast
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>Prediction</lastName>
+          <lastName>NOAA National Centers for Environmental Prediction</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -35526,8 +35497,7 @@ The data originally came from South Africa where it was on a 10-degree by 5-degr
     <persons>
       <person id="personAssoc1" contactPerson="false">
         <person origin="external">
-          <firstName>South</firstName>
-          <lastName>South African Weather Bureau</lastName>
+          <lastName>South African Weather Bureau, South Africa</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -35555,8 +35525,7 @@ The data originally came from South Africa where it was on a 10-degree by 5-degr
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>India</firstName>
-          <lastName>India Meteorological Department</lastName>
+          <lastName>India Meteorological Department, India</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -35647,8 +35616,7 @@ Currently, the only available time series' are series' of 500mb geopotential hei
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -35785,8 +35753,7 @@ Available parameters include sea-level pressure, surface and sea-surface tempera
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -35983,8 +35950,7 @@ The ERA-Interim data from ECMWF is an update to the ERA-40 project. The ERA-Inte
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -36056,8 +36022,7 @@ The ERA-Interim data from ECMWF is an update to the ERA-40 project. The ERA-Inte
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -36169,8 +36134,7 @@ The ERA-Interim data from ECMWF is an update to the ERA-40 project. The ERA-Inte
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>U.S.</firstName>
-          <lastName>557th Weather Wing</lastName>
+          <lastName>557th Weather Wing, U.S. Air Force, U. S. Department of Defense</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -36288,8 +36252,7 @@ The ERA-Interim data from ECMWF is an update to the ERA-40 project. The ERA-Inte
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -36331,8 +36294,7 @@ The ERA-Interim data from ECMWF is an update to the ERA-40 project. The ERA-Inte
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -36565,8 +36527,7 @@ The ERA-Interim data from ECMWF is an update to the ERA-40 project. The ERA-Inte
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>U.S.</firstName>
-          <lastName>557th Weather Wing</lastName>
+          <lastName>557th Weather Wing, U.S. Air Force, U. S. Department of Defense</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -36649,8 +36610,7 @@ The ERA-Interim data from ECMWF is an update to the ERA-40 project. The ERA-Inte
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Ecole</firstName>
-          <lastName>Laboratoire de Meteorologie Dynamique</lastName>
+          <lastName>Laboratoire de Meteorologie Dynamique, Ecole Polytechnique, France</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -36704,8 +36664,7 @@ The ERA-Interim data from ECMWF is an update to the ERA-40 project. The ERA-Inte
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -36894,8 +36853,11 @@ Note: Beyond the simulations documented above, there are additional simulations 
         <role>contributor</role>
       </person>
       <person id="personAssoc7" contactPerson="false">
-        <person lookupId="015546"/>
-        <role>creator</role>
+        <person origin="external">
+          <firstName>Holly</firstName>
+          <lastName>Olivarez</lastName>
+        </person>
+        <role>contributor</role>
       </person>
       <person id="personAssoc8" contactPerson="false">
         <person origin="external">
@@ -36946,8 +36908,7 @@ The ERA-Interim data from ECMWF is an update to the ERA-40 project. The ERA-Inte
     <persons>
       <person id="personAssoc1" contactPerson="false">
         <person origin="external">
-          <firstName>New</firstName>
-          <lastName>Meteorological Service</lastName>
+          <lastName>Meteorological Service, New Zealand</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37007,22 +36968,19 @@ The daily 500mb geopotential height grids cover the period from January 1945 to 
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Japan Meteorological Agency</lastName>
+          <lastName>Japan Meteorological Agency, Japan</lastName>
         </person>
         <role>contributor</role>
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Bergen</firstName>
-          <lastName>Institute of Marine Research</lastName>
+          <lastName>Institute of Marine Research, Bergen, Norway</lastName>
         </person>
         <role>contributor</role>
       </person>
       <person id="personAssoc4" contactPerson="false">
         <person origin="external">
-          <firstName>Alfred</firstName>
-          <lastName>Research</lastName>
+          <lastName>Alfred Wegener Institute for Polar and Marine Research</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37114,8 +37072,7 @@ We have also received data for more than 130 U.S. stations that were digitized f
       </person>
       <person id="personAssoc5" contactPerson="false">
         <person origin="external">
-          <firstName>Germany</firstName>
-          <lastName>Deutscher Wetterdienst (German Meteorological  Service)</lastName>
+          <lastName>Deutscher Wetterdienst (German Meteorological  Service), Germany</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37139,8 +37096,7 @@ We have also received data for more than 130 U.S. stations that were digitized f
       </person>
       <person id="personAssoc9" contactPerson="false">
         <person origin="external">
-          <firstName>NESDIS</firstName>
-          <lastName>National Centers for Environmental Information</lastName>
+          <lastName>National Centers for Environmental Information, NESDIS, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37161,8 +37117,7 @@ This data set was received as a revision to an NCDC tropical cyclone data set, w
     <persons>
       <person id="personAssoc1" contactPerson="false">
         <person origin="external">
-          <firstName>Australia</firstName>
-          <lastName>Bureau of Meteorology</lastName>
+          <lastName>Bureau of Meteorology, Australia</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37184,8 +37139,7 @@ This data set was received as a revision to an NCDC tropical cyclone data set, w
       </person>
       <person id="personAssoc5" contactPerson="false">
         <person origin="external">
-          <firstName>Science</firstName>
-          <lastName>Corporation</lastName>
+          <lastName>Science Applications International Corporation</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37209,8 +37163,7 @@ This data set was received as a revision to an NCDC tropical cyclone data set, w
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37272,15 +37225,13 @@ IMPORTANT: The time period of data available is defined in two segments.
       </person>
       <person id="personAssoc7" contactPerson="false">
         <person origin="external">
-          <firstName>Germany</firstName>
-          <lastName>Deutscher Wetterdienst (German Meteorological  Service)</lastName>
+          <lastName>Deutscher Wetterdienst (German Meteorological  Service), Germany</lastName>
         </person>
         <role>contributor</role>
       </person>
       <person id="personAssoc8" contactPerson="false">
         <person origin="external">
-          <firstName>United</firstName>
-          <lastName>World Meteorological Organization</lastName>
+          <lastName>World Meteorological Organization, United Nations</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37292,8 +37243,7 @@ IMPORTANT: The time period of data available is defined in two segments.
       </person>
       <person id="personAssoc10" contactPerson="false">
         <person origin="external">
-          <firstName>Fisheries</firstName>
-          <lastName>Integrated Science Data Management</lastName>
+          <lastName>Integrated Science Data Management, Fisheries and Oceans, Canada</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37323,8 +37273,7 @@ IMPORTANT: The time period of data available is defined in two segments.
       </person>
       <person id="personAssoc15" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37425,8 +37374,7 @@ The data came to DSS originally from South Africa, where it was on a diamond lat
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>South</firstName>
-          <lastName>South African Weather Bureau</lastName>
+          <lastName>South African Weather Bureau, South Africa</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37474,8 +37422,7 @@ The data came to DSS originally from South Africa, where it was on a diamond lat
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37537,15 +37484,13 @@ IMPORTANT: The time period of data available is defined in two segments.
       </person>
       <person id="personAssoc7" contactPerson="false">
         <person origin="external">
-          <firstName>Germany</firstName>
-          <lastName>Deutscher Wetterdienst (German Meteorological  Service)</lastName>
+          <lastName>Deutscher Wetterdienst (German Meteorological  Service), Germany</lastName>
         </person>
         <role>contributor</role>
       </person>
       <person id="personAssoc8" contactPerson="false">
         <person origin="external">
-          <firstName>United</firstName>
-          <lastName>World Meteorological Organization</lastName>
+          <lastName>World Meteorological Organization, United Nations</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37557,8 +37502,7 @@ IMPORTANT: The time period of data available is defined in two segments.
       </person>
       <person id="personAssoc10" contactPerson="false">
         <person origin="external">
-          <firstName>Fisheries</firstName>
-          <lastName>Integrated Science Data Management</lastName>
+          <lastName>Integrated Science Data Management, Fisheries and Oceans, Canada</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37588,8 +37532,7 @@ IMPORTANT: The time period of data available is defined in two segments.
       </person>
       <person id="personAssoc15" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -37647,8 +37590,7 @@ We continue to update this dataset mainly for users who have used it in the past
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -38133,8 +38075,7 @@ Suominet is a network of ground-based GPS receivers and met packs which are used
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>National Centers for Environmental Prediction</lastName>
+          <lastName>National Centers for Environmental Prediction, National Weather Service, NOAA, U.S. Department of Commerce</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -38289,8 +38230,7 @@ ASR version 2 will be updated through 2019, then reran (2000-2019) using the mos
     <persons>
       <person id="personAssoc1" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Japan Meteorological Agency</lastName>
+          <lastName>Japan Meteorological Agency, Japan</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -40291,8 +40231,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Wyoming</firstName>
-          <lastName>Transportation</lastName>
+          <lastName>Wyoming Department of Transportation</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -41047,8 +40986,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>Administration</lastName>
+          <lastName>National Oceanic and Atmospheric Administration</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -41150,8 +41088,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -41229,8 +41166,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Wyoming</firstName>
-          <lastName>Transportation</lastName>
+          <lastName>Wyoming Department of Transportation</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -41711,8 +41647,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>M&amp;amp</firstName>
-          <lastName>o-France</lastName>
+          <lastName>M&amp;amp;eacute;t&amp;amp;eacute;o-France</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -42211,8 +42146,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>M&amp;amp</firstName>
-          <lastName>o-France</lastName>
+          <lastName>M&amp;amp;eacute;t&amp;amp;eacute;o-France</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -42326,8 +42260,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -42967,8 +42900,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -43210,8 +43142,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -43791,8 +43722,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>M&amp;amp</firstName>
-          <lastName>o-France</lastName>
+          <lastName>M&amp;amp;eacute;t&amp;amp;eacute;o-France</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -45492,8 +45422,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -45665,8 +45594,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -45926,8 +45854,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>Administration</lastName>
+          <lastName>National Oceanic and Atmospheric Administration</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -45969,8 +45896,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>Prediction</lastName>
+          <lastName>NOAA National Centers for Environmental Prediction</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -46012,8 +45938,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Danish</firstName>
-          <lastName>Institute</lastName>
+          <lastName>Danish Meteorological Institute</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -46263,8 +46188,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -46486,8 +46410,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -47531,8 +47454,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Wyoming</firstName>
-          <lastName>Transportation</lastName>
+          <lastName>Wyoming Department of Transportation</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -47688,8 +47610,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Agency</lastName>
+          <lastName>Japan Meteorological Agency</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -47767,8 +47688,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Agency</lastName>
+          <lastName>Japan Meteorological Agency</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -48180,8 +48100,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -48356,8 +48275,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -48870,8 +48788,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>United</firstName>
-          <lastName>Reclamation</lastName>
+          <lastName>United States Bureau of Reclamation</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -48949,8 +48866,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>Prediction</lastName>
+          <lastName>NOAA National Centers for Environmental Prediction</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -49464,8 +49380,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>WSI</firstName>
-          <lastName>Corporation</lastName>
+          <lastName>WSI Corporation</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -49651,8 +49566,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -49730,8 +49644,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Danish</firstName>
-          <lastName>Institute</lastName>
+          <lastName>Danish Meteorological Institute</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -50391,8 +50304,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Montana</firstName>
-          <lastName>Transportation</lastName>
+          <lastName>Montana Department of Transportation</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -50542,8 +50454,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Instituto</firstName>
-          <lastName>sica</lastName>
+          <lastName>Instituto Nacional de Meteorologia e Geof&amp;amp;iacute;sica</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -50808,8 +50719,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -51038,8 +50948,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -51292,8 +51201,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>Prediction</lastName>
+          <lastName>NOAA National Centers for Environmental Prediction</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -51497,8 +51405,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -53205,8 +53112,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>North</firstName>
-          <lastName>Board</lastName>
+          <lastName>North Dakota Atmospheric Resource Board</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -53574,8 +53480,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -53599,8 +53504,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -53793,8 +53697,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -54400,8 +54303,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -54587,8 +54489,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Montana</firstName>
-          <lastName>Transportation</lastName>
+          <lastName>Montana Department of Transportation</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -54702,8 +54603,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -54896,8 +54796,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>NOAA</firstName>
-          <lastName>Prediction</lastName>
+          <lastName>NOAA National Centers for Environmental Prediction</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -54954,6 +54853,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       <person id="personAssoc4" contactPerson="false">
         <person origin="external">
           <firstName>Timo</firstName>
+          <lastName>Ryypp&amp;amp;ouml;</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -55454,8 +55354,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Bureau</firstName>
-          <lastName>Meteorology</lastName>
+          <lastName>Bureau of Meteorology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -55649,8 +55548,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Agency</lastName>
+          <lastName>Japan Meteorological Agency</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -55782,8 +55680,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -56158,8 +56055,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -56868,8 +56764,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -58037,6 +57932,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       <person id="personAssoc4" contactPerson="false">
         <person origin="external">
           <firstName>Timo</firstName>
+          <lastName>Ryypp&amp;amp;ouml;</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -58114,8 +58010,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Danish</firstName>
-          <lastName>Institute</lastName>
+          <lastName>Danish Meteorological Institute</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -58664,8 +58559,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -59128,8 +59022,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>M&amp;amp</firstName>
-          <lastName>o-France</lastName>
+          <lastName>M&amp;amp;eacute;t&amp;amp;eacute;o-France</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -59682,8 +59575,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -59815,8 +59707,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Icelandic</firstName>
-          <lastName>Guard</lastName>
+          <lastName>Icelandic Coast Guard</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -59872,8 +59763,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>Administration</lastName>
+          <lastName>National Oceanic and Atmospheric Administration</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -60065,8 +59955,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -60126,8 +60015,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Agency</lastName>
+          <lastName>Japan Meteorological Agency</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -60374,8 +60262,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -60665,8 +60552,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>M&amp;amp</firstName>
-          <lastName>o-France</lastName>
+          <lastName>M&amp;amp;eacute;t&amp;amp;eacute;o-France</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -60798,8 +60684,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -61174,8 +61059,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Danish</firstName>
-          <lastName>Institute</lastName>
+          <lastName>Danish Meteorological Institute</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -61235,8 +61119,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -61314,8 +61197,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -61876,8 +61758,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Wyoming</firstName>
-          <lastName>Transportation</lastName>
+          <lastName>Wyoming Department of Transportation</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -63379,8 +63260,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Bureau</firstName>
-          <lastName>Meteorology</lastName>
+          <lastName>Bureau of Meteorology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -63404,8 +63284,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -63659,8 +63538,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -63806,8 +63684,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -64068,8 +63945,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Meteorological</firstName>
-          <lastName>Singapore</lastName>
+          <lastName>Meteorological Service Singapore</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -64543,8 +64419,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Universidad</firstName>
-          <lastName>Nacional</lastName>
+          <lastName>Universidad de Costa Rica-Instituto Meteorologico Nacional</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -64653,8 +64528,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -64876,8 +64750,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -65270,8 +65143,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -66372,8 +66244,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>Administration</lastName>
+          <lastName>National Oceanic and Atmospheric Administration</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -66505,8 +66376,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -66656,8 +66526,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Instituto</firstName>
-          <lastName>sica</lastName>
+          <lastName>Instituto Nacional de Meteorologia e Geof&amp;amp;iacute;sica</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -67066,8 +66935,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -68649,8 +68517,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -68692,8 +68559,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>North</firstName>
-          <lastName>Board</lastName>
+          <lastName>North Dakota Atmospheric Resource Board</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -68807,8 +68673,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -68886,8 +68751,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>Administration</lastName>
+          <lastName>National Oceanic and Atmospheric Administration</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -68911,8 +68775,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -69212,8 +69075,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>United</firstName>
-          <lastName>Reclamation</lastName>
+          <lastName>United States Bureau of Reclamation</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -69309,8 +69171,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -69408,8 +69269,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -69674,8 +69534,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -69861,8 +69720,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -71064,8 +70922,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -71269,8 +71126,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>M&amp;amp</firstName>
-          <lastName>o-France</lastName>
+          <lastName>M&amp;amp;eacute;t&amp;amp;eacute;o-France</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -71330,8 +71186,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -71355,8 +71210,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -71380,8 +71234,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Agricultural</firstName>
-          <lastName>Service</lastName>
+          <lastName>Agricultural Research Service</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -71594,8 +71447,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>Administration</lastName>
+          <lastName>National Oceanic and Atmospheric Administration</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -71981,8 +71833,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -72476,8 +72327,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Agricultural</firstName>
-          <lastName>Service</lastName>
+          <lastName>Agricultural Research Service</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -73191,8 +73041,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Naval</firstName>
-          <lastName>Lake</lastName>
+          <lastName>Naval Air Weapons Station (NAWS) China Lake</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -73813,8 +73662,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Montana</firstName>
-          <lastName>Transportation</lastName>
+          <lastName>Montana Department of Transportation</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -73874,8 +73722,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Agency</lastName>
+          <lastName>Japan Meteorological Agency</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -74122,8 +73969,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -74519,8 +74365,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -74580,8 +74425,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -74659,8 +74503,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -77286,8 +77129,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Swedish</firstName>
-          <lastName>Institute</lastName>
+          <lastName>Swedish Meteorological and Hydrological Institute</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -77371,8 +77213,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -77603,8 +77444,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Montana</firstName>
-          <lastName>Transportation</lastName>
+          <lastName>Montana Department of Transportation</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -77826,8 +77666,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -78009,8 +77848,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -78076,8 +77914,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc3" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -78379,8 +78216,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -78512,8 +78348,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Bureau</firstName>
-          <lastName>Meteorology</lastName>
+          <lastName>Bureau of Meteorology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -78669,8 +78504,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Danish</firstName>
-          <lastName>Institute</lastName>
+          <lastName>Danish Meteorological Institute</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -78748,8 +78582,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>Administration</lastName>
+          <lastName>National Oceanic and Atmospheric Administration</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -78962,8 +78795,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -79210,8 +79042,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Instituto</firstName>
-          <lastName>sica</lastName>
+          <lastName>Instituto Nacional de Meteorologia e Geof&amp;amp;iacute;sica</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -79512,8 +79343,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -80211,8 +80041,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -80751,8 +80580,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -80776,8 +80604,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -81104,8 +80931,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Atmospheric</firstName>
-          <lastName>facility</lastName>
+          <lastName>Atmospheric Radiation Measurement (ARM) user facility</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -81435,8 +81261,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Naval</firstName>
-          <lastName>Lemoore</lastName>
+          <lastName>Naval Air Station Lemoore</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -81478,8 +81303,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>M&amp;amp</firstName>
-          <lastName>o-France</lastName>
+          <lastName>M&amp;amp;eacute;t&amp;amp;eacute;o-France</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -82063,8 +81887,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -82239,8 +82062,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -82865,8 +82687,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Centro</firstName>
-          <lastName>(CICESE)</lastName>
+          <lastName>Centro de Investigaci&amp;amp;oacute;n Cient&amp;amp;iacute;fica y de Educatci&amp;amp;oacute;n Superior de Ensenada (CICESE)</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -83119,8 +82940,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Danish</firstName>
-          <lastName>Institute</lastName>
+          <lastName>Danish Meteorological Institute</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -83297,8 +83117,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Agency</lastName>
+          <lastName>Japan Meteorological Agency</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -83628,8 +83447,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Danish</firstName>
-          <lastName>Institute</lastName>
+          <lastName>Danish Meteorological Institute</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -83689,8 +83507,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>National</firstName>
-          <lastName>Administration</lastName>
+          <lastName>National Oceanic and Atmospheric Administration</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -84744,8 +84561,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>Japan</firstName>
-          <lastName>Technology</lastName>
+          <lastName>Japan Agency for Marine-Earth Science and Technology</lastName>
         </person>
         <role>contributor</role>
       </person>
@@ -84987,8 +84803,7 @@ The full dataset (data volume ~35 TB) can be accessed for download or via web se
       </person>
       <person id="personAssoc2" contactPerson="false">
         <person origin="external">
-          <firstName>M&amp;amp</firstName>
-          <lastName>o-France</lastName>
+          <lastName>M&amp;amp;eacute;t&amp;amp;eacute;o-France</lastName>
         </person>
         <role>contributor</role>
       </person>
